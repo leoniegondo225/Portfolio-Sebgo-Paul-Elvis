@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #141414;
+  --paper: #faf9f5;
+  --cream: #ece4d3;
+  --orange: #e8622c;
+  --green: #0e8a5b;
+  --green-tint: #e7f3ec;
+  --stone: #f4f2ec;
+}
+
+@theme inline {
+  --color-ink: var(--ink);
+  --color-paper: var(--paper);
+  --color-cream: var(--cream);
+  --color-orange: var(--orange);
+  --color-green: var(--green);
+  --color-green-tint: var(--green-tint);
+  --color-stone: var(--stone);
+  --font-display: var(--font-anton);
+  --font-sans: var(--font-inter);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-anton), Arial, Helvetica, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+::selection {
+  background: var(--orange);
+  color: white;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* custom cursor accent dot that follows pointer, desktop only */
+.cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  border: 1.5px solid var(--orange);
+  pointer-events: none;
+  z-index: 999;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease, height 0.2s ease, background 0.2s ease, opacity 0.2s ease;
+  opacity: 0;
+  mix-blend-mode: normal;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .cursor-dot {
+    opacity: 1;
+  }
+}
+
+.hairline {
+  background: currentColor;
+  opacity: 0.12;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 28s linear infinite;
+}
+
+.noise-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  opacity: 0.05;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+@keyframes kenburns {
+  from {
+    transform: scale(1.06);
+  }
+  to {
+    transform: scale(1.16);
+  }
+}
+
+.animate-kenburns {
+  animation: kenburns 16s ease-in-out infinite alternate;
+}
