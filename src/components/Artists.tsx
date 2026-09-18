@@ -44,18 +44,7 @@ export default function Artists() {
           </p>
         </Reveal>
 
-        <Reveal delay={0.14} className="mt-8 max-w-md">
-          <div className="relative aspect-[9/16] overflow-hidden rounded-2xl bg-cream">
-            <video
-              src="/ouaga-stand-in-praise.mp4"
-              controls
-              playsInline
-              preload="metadata"
-              className="h-full w-full object-cover"
-            />
-          </div>
-          <p className="mt-2 text-xs text-ink/50">Ouaga Stand in Praise</p>
-        </Reveal>
+        
       </div>
     </section>
   );

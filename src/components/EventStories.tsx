@@ -57,22 +57,7 @@ export default function EventStories() {
           </Reveal>
         </div>
 
-        <Stagger className="mt-12 md:mt-16 grid sm:grid-cols-2 gap-4 md:gap-5">
-          {EVENT_VIDEOS.map((v) => (
-            <StaggerItem key={v.src}>
-              <div className="relative aspect-video overflow-hidden rounded-2xl bg-ink">
-                <video
-                  src={v.src}
-                  controls
-                  playsInline
-                  preload="metadata"
-                  className="h-full w-full object-cover"
-                />
-              </div>
-              <p className="mt-2 text-xs text-ink/60">{v.label}</p>
-            </StaggerItem>
-          ))}
-        </Stagger>
+        
       </div>
     </section>
   );

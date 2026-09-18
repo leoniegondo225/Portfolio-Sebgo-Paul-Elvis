@@ -104,22 +104,7 @@ export default function PersonalBranding() {
           </div>
         </div>
 
-        <Stagger className="mt-14 md:mt-16 grid sm:grid-cols-3 gap-4 md:gap-5">
-          {CLIPS.map((c) => (
-            <StaggerItem key={c.src}>
-              <div className="relative aspect-[9/16] overflow-hidden rounded-2xl bg-white/5">
-                <video
-                  src={c.src}
-                  controls
-                  playsInline
-                  preload="metadata"
-                  className="h-full w-full object-cover"
-                />
-              </div>
-              <p className="mt-2 text-xs text-paper/60">{c.label}</p>
-            </StaggerItem>
-          ))}
-        </Stagger>
+     
       </div>
     </section>
   );

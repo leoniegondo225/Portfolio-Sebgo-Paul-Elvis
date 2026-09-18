@@ -12,14 +12,6 @@ export type Catalogue = {
 };
 
 const ALL_VIDEOS: MediaItem[] = [
-  { type: "video", src: "/jusida-presentation.mp4", label: "IDA — présentation de la nouvelle marque de jus" },
-  { type: "video", src: "/ida-sante-ananas.mp4", label: "Ida Santé — les bienfaits du jus d'ananas" },
-  { type: "video", src: "/ida-depistage-72h.mp4", label: "IDA mobilisée — 72h de dépistage" },
-  { type: "video", src: "/ida-equipe-2026.mp4", label: "L'équipe IDA — vœux 2026" },
-  { type: "video", src: "/faso-events-aid-el-fitr.mp4", label: "Faso Events — vœux de l'Aïd el-Fitr" },
-  { type: "video", src: "/ouaga-stand-in-praise.mp4", label: "Ouaga Stand in Praise" },
-  { type: "video", src: "/mariage-couple-ouedraogo.mp4", label: "Mariage — couple Ouedraogo" },
-  { type: "video", src: "/une-journee.mp4", label: "Une journée" },
   { type: "video", src: "/personal-branding.mp4", label: "Personal branding" },
   { type: "video", src: "/farida-adeline-reels.mp4", label: "Farida Adeline Compaoré" },
   { type: "video", src: "/toro-bespoke.mp4", label: "Toro Bespoke" },
@@ -45,11 +37,6 @@ const JUS_IDA_IMAGES: MediaItem[] = [
   label: "IDA / Don Amélie — visuel marque de jus",
 }));
 
-const BRAND_MARKS: MediaItem[] = [
-  { type: "image", src: "/images/jus-ida.jpeg", label: "IDA — identité de marque" },
-  { type: "image", src: "/images/logo1.jpeg", label: "OV Studio — logo" },
-  { type: "image", src: "/images/logo2.jpeg", label: "IDA — logo" },
-];
 
 export const CATALOGUES: Catalogue[] = [
   {
@@ -65,7 +52,7 @@ export const CATALOGUES: Catalogue[] = [
     intro:
       "Positionnement, identité, stratégie de communication, storytelling, personal branding.",
     items: [
-      ...BRAND_MARKS,
+
       { type: "video", src: "/personal-branding.mp4", label: "Personal branding" },
       { type: "video", src: "/farida-adeline-reels.mp4", label: "Farida Adeline Compaoré" },
       { type: "video", src: "/farida-onecca-promotion.mp4", label: "Sortie de promotion FASE — ONECCA Business School" },
@@ -80,13 +67,13 @@ export const CATALOGUES: Catalogue[] = [
     title: "Design",
     intro:
       "Identité visuelle, supports de communication, direction artistique, contenus graphiques.",
-    items: [...BRAND_MARKS, ...JUS_IDA_IMAGES],
+    items: [],
   },
   {
     slug: "image",
     title: "Image",
     intro: "Portraits, événements, contenus visuels et univers photographique.",
-    items: [...PORTRAIT_IMAGES, ...JUS_IDA_IMAGES],
+    items: [],
   },
 ];
 

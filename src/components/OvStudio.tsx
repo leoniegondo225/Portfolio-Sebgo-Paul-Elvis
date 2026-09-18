@@ -64,20 +64,7 @@ export default function OvStudio() {
           </Reveal>
         </div>
 
-        <Reveal delay={0.22} className="mt-14 md:mt-16">
-          <div className="relative aspect-video max-w-3xl overflow-hidden rounded-3xl bg-ink">
-            <video
-              src="/entreprise.mp4"
-              controls
-              playsInline
-              preload="metadata"
-              className="h-full w-full object-cover"
-            />
-          </div>
-          <p className="mt-2 text-xs text-ink/50">
-            OV Studio × Entreprise — contenu corporate
-          </p>
-        </Reveal>
+        
       </div>
     </section>
   );

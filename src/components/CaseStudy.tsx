@@ -99,73 +99,8 @@ export default function CaseStudy() {
           </div>
         </Reveal>
 
-        <div className="mt-10 md:mt-12 grid lg:grid-cols-[1.3fr_1fr] gap-4 md:gap-5">
-          <Reveal direction="left">
-            <div className="relative aspect-video w-full overflow-hidden rounded-3xl bg-ink">
-              <video
-                src="/jusida-presentation.mp4"
-                poster="/images/jus-ida.jpeg"
-                controls
-                playsInline
-                preload="metadata"
-                className="h-full w-full object-cover"
-              />
-            </div>
-            <p className="mt-2 text-xs text-ink/50">
-              Présentation — la nouvelle marque de jus 100% #jusida
-            </p>
-          </Reveal>
-
-          <div className="grid grid-cols-2 grid-rows-3 gap-3 md:gap-4">
-            {GALLERY.map((src) => (
-              <Reveal key={src} direction="right" className="relative aspect-square overflow-hidden rounded-2xl bg-cream">
-                <Image
-                  src={src}
-                  alt="Visuel de la marque de jus IDA"
-                  fill
-                  sizes="20vw"
-                  className="object-cover"
-                />
-              </Reveal>
-            ))}
-          </div>
-        </div>
-
-        <Reveal delay={0.1} className="mt-6 md:mt-8">
-          <div className="flex gap-3 md:gap-4 overflow-x-auto pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-            {MORE_VISUALS.map((src) => (
-              <div
-                key={src}
-                className="relative aspect-square w-28 md:w-36 shrink-0 overflow-hidden rounded-xl bg-cream"
-              >
-                <Image
-                  src={src}
-                  alt="Visuel de la marque de jus IDA"
-                  fill
-                  sizes="144px"
-                  className="object-cover"
-                />
-              </div>
-            ))}
-          </div>
-        </Reveal>
-
-        <Stagger className="mt-6 md:mt-8 grid sm:grid-cols-3 gap-4 md:gap-5">
-          {VIDEOS.map((v) => (
-            <StaggerItem key={v.src}>
-              <div className="relative aspect-[9/16] overflow-hidden rounded-2xl bg-ink">
-                <video
-                  src={v.src}
-                  controls
-                  playsInline
-                  preload="metadata"
-                  className="h-full w-full object-cover"
-                />
-              </div>
-              <p className="mt-2 text-xs text-ink/60">{v.label}</p>
-            </StaggerItem>
-          ))}
-        </Stagger>
+      
+        
       </div>
     </section>
   );

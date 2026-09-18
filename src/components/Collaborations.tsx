@@ -33,25 +33,6 @@ export default function Collaborations() {
           ))}
         </Stagger>
 
-        <Stagger className="mt-6 md:mt-8 grid sm:grid-cols-2 gap-4 md:gap-5 max-w-3xl">
-          {[
-            { src: "/canal-burkina-royal.mp4", label: "Branding Canal+ Burkina — lancement #ROYAL" },
-            { src: "/canal-burkina-royal-1.mp4", label: "Branding Canal+ Burkina — lancement #ROYAL (2)" },
-          ].map((v) => (
-            <StaggerItem key={v.src}>
-              <div className="relative aspect-video overflow-hidden rounded-2xl bg-ink">
-                <video
-                  src={v.src}
-                  controls
-                  playsInline
-                  preload="metadata"
-                  className="h-full w-full object-cover"
-                />
-              </div>
-              <p className="mt-2 text-xs text-ink/50">{v.label}</p>
-            </StaggerItem>
-          ))}
-        </Stagger>
       </div>
     </section>
   );
