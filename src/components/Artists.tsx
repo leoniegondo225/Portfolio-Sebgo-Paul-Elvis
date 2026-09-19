@@ -17,7 +17,7 @@ export default function Artists() {
           <Reveal direction="left">
             <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-cream">
               <Image
-                src="/images/3.jpeg"
+                src="/images/3.png"
                 alt="Tournage en salle de spectacle"
                 fill
                 sizes="(min-width: 768px) 25vw, 50vw"

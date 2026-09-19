@@ -33,7 +33,7 @@ export default function BehindWork() {
           <div className="grid grid-cols-2 gap-1.5 md:gap-2 rounded-3xl overflow-hidden">
             <div className="relative aspect-[3/4]">
               <Image
-                src="/images/3.jpeg"
+                src="/images/3.png"
                 alt="Sebgo Paul Elvis filmant avec un smartphone stabilisé"
                 fill
                 sizes="50vw"

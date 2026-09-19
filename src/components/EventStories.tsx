@@ -51,7 +51,7 @@ export default function EventStories() {
                 alt="Sebgo Paul Elvis en tournage lors d'un événement"
                 fill
                 sizes="(min-width: 768px) 45vw, 100vw"
-                className="object-cover"
+                className="object-cover object-top"
               />
             </div>
           </Reveal>

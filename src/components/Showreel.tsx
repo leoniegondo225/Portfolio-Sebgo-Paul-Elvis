@@ -19,7 +19,7 @@ export default function Showreel() {
         <Reveal delay={0.15} className="mt-12 md:mt-20">
           <div className="relative grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-2 max-w-4xl">
             {[
-              { src: "/images/3.jpeg", tilt: -2, hide: false },
+              { src: "/images/3.png", tilt: -2, hide: false },
               { src: "/images/2.jpeg", tilt: 0, hide: false },
               { src: "/images/6.jpeg", tilt: 2, hide: true },
             ].map((img, i) => (
