@@ -69,13 +69,13 @@ export default function Nav() {
           aria-label="Menu"
         >
           <span
-            className={`block h-0.5 w-6 bg-ink transition-transform ${open ? "translate-y-2 rotate-45" : ""}`}
+            className={`block h-0.5 w-6 transition-all ${scrolled ? "bg-ink" : "bg-paper"} ${open ? "translate-y-2 rotate-45" : ""}`}
           />
           <span
-            className={`block h-0.5 w-6 bg-ink transition-opacity ${open ? "opacity-0" : ""}`}
+            className={`block h-0.5 w-6 transition-all ${scrolled ? "bg-ink" : "bg-paper"} ${open ? "opacity-0" : ""}`}
           />
           <span
-            className={`block h-0.5 w-6 bg-ink transition-transform ${open ? "-translate-y-2 -rotate-45" : ""}`}
+            className={`block h-0.5 w-6 transition-all ${scrolled ? "bg-ink" : "bg-paper"} ${open ? "-translate-y-2 -rotate-45" : ""}`}
           />
         </button>
       </nav>

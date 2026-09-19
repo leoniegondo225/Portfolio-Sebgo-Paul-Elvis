@@ -5,7 +5,7 @@ export default function OvStudio() {
   return (
     <section id="studio" className="relative bg-paper py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-6 md:px-10">
-        <div className="flex items-start justify-between gap-6">
+        <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 sm:gap-6">
           <div>
             <Reveal delay={0.06}>
               <h2 className="font-display text-4xl sm:text-5xl md:text-7xl leading-[0.95]">

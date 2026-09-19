@@ -27,7 +27,7 @@ export default function Hero() {
     >
       <div className="flex flex-col md:grid md:grid-cols-[minmax(0,44%)_1fr] md:min-h-[100svh]">
         {/* Text column */}
-        <div className="relative z-20 flex flex-col justify-between px-6 md:px-10 pt-24 pb-12 md:pb-16 order-2 md:order-1">
+        <div className="relative z-20 flex flex-col justify-between px-5 md:px-10 pt-20 pb-10 md:pb-16 order-2 md:order-1">
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -117,7 +117,7 @@ export default function Hero() {
         </div>
 
         {/* Image column */}
-        <div className="relative order-1 md:order-2 h-[46svh] md:h-auto">
+        <div className="relative order-1 md:order-2 h-[38svh] sm:h-[44svh] md:h-auto">
           <motion.div
             style={{ y: imgY }}
             className="absolute inset-0 -top-[10%] -bottom-[10%]"

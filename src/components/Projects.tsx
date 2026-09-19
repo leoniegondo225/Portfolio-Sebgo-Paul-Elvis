@@ -39,12 +39,12 @@ export default function Projects() {
                 {p.catalogue === "mariage" || p.catalogue === "ida" ? (
                   <button
                     onClick={() => p.catalogue === "ida" ? setShowIda(true) : setShowMariage(true)}
-                    className={`group block w-full h-full text-left rounded-2xl border-t-4 border-orange p-6 md:p-7 transition-transform hover:-translate-y-1 ${
+                    className={`group block w-full h-full min-h-[140px] text-left rounded-2xl border-t-4 border-orange p-5 md:p-7 transition-transform hover:-translate-y-1 ${
                       p.tint ? "bg-green-tint" : "bg-stone"
                     }`}
                   >
                     <h3 className="font-bold text-lg leading-snug pr-4">{p.title}</h3>
-                    <span className="mt-8 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wide text-green">
+                    <span className="mt-6 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wide text-green">
                       Projet / Étude de cas
                       <span className="transition-transform group-hover:translate-x-1">→</span>
                     </span>
@@ -52,12 +52,12 @@ export default function Projects() {
                 ) : p.video ? (
                   <button
                     onClick={() => setActiveVideo(p.video!)}
-                    className={`group block w-full h-full text-left rounded-2xl border-t-4 border-orange p-6 md:p-7 transition-transform hover:-translate-y-1 ${
+                    className={`group block w-full h-full min-h-[140px] text-left rounded-2xl border-t-4 border-orange p-5 md:p-7 transition-transform hover:-translate-y-1 ${
                       p.tint ? "bg-green-tint" : "bg-stone"
                     }`}
                   >
                     <h3 className="font-bold text-lg leading-snug pr-4">{p.title}</h3>
-                    <span className="mt-8 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wide text-green">
+                    <span className="mt-6 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wide text-green">
                       ▶ Voir la vidéo
                       <span className="transition-transform group-hover:translate-x-1">→</span>
                     </span>
@@ -65,12 +65,12 @@ export default function Projects() {
                 ) : (
                   <a
                     href="#contact"
-                    className={`group block h-full rounded-2xl border-t-4 border-orange p-6 md:p-7 transition-transform hover:-translate-y-1 ${
+                    className={`group block h-full min-h-[140px] rounded-2xl border-t-4 border-orange p-5 md:p-7 transition-transform hover:-translate-y-1 ${
                       p.tint ? "bg-green-tint" : "bg-stone"
                     }`}
                   >
                     <h3 className="font-bold text-lg leading-snug pr-4">{p.title}</h3>
-                    <span className="mt-8 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wide text-green">
+                    <span className="mt-6 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wide text-green">
                       Projet / Étude de cas
                       <span className="transition-transform group-hover:translate-x-1">→</span>
                     </span>

@@ -16,12 +16,12 @@ export default function Showreel() {
           </h2>
         </Reveal>
 
-        <Reveal delay={0.15} className="mt-16 md:mt-20">
-          <div className="relative grid grid-cols-3 gap-1.5 md:gap-2 max-w-4xl">
+        <Reveal delay={0.15} className="mt-12 md:mt-20">
+          <div className="relative grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-2 max-w-4xl">
             {[
-              { src: "/images/3.jpeg", tilt: -2 },
-              { src: "/images/2.jpeg", tilt: 0 },
-              { src: "/images/6.jpeg", tilt: 2 },
+              { src: "/images/3.jpeg", tilt: -2, hide: false },
+              { src: "/images/2.jpeg", tilt: 0, hide: false },
+              { src: "/images/6.jpeg", tilt: 2, hide: true },
             ].map((img, i) => (
               <motion.div
                 key={img.src}
@@ -30,13 +30,13 @@ export default function Showreel() {
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 0.7, delay: i * 0.12, ease: [0.22, 1, 0.36, 1] }}
                 whileHover={{ y: -8, rotate: 0, zIndex: 10 }}
-                className={`relative aspect-[3/4] overflow-hidden rounded-2xl bg-white/5 ${i === 1 ? "mt-[-6%] md:mt-[-10%]" : ""}`}
+                className={`relative aspect-[3/4] overflow-hidden rounded-2xl bg-white/5 ${i === 1 ? "mt-[-6%] md:mt-[-10%]" : ""} ${img.hide ? "hidden md:block" : ""}`}
               >
                 <Image
                   src={img.src}
                   alt="Aperçu du showreel OV Studio"
                   fill
-                  sizes="(min-width: 768px) 30vw, 33vw"
+                  sizes="(min-width: 768px) 30vw, 50vw"
                   className="object-cover"
                 />
               </motion.div>

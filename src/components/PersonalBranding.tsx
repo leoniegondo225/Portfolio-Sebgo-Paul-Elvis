@@ -75,11 +75,11 @@ export default function PersonalBranding() {
 
                 <div
                   style={{ transform: "translateZ(60px)" }}
-                  className="absolute -bottom-6 -right-6 text-paper"
+                  className="absolute -bottom-4 -right-4 md:-bottom-6 md:-right-6 text-paper"
                 >
                   <RotatingBadge
                     text="MOBILE FILMMAKER • REAL MAKER • "
-                    size={104}
+                    size={96}
                   />
                 </div>
               </div>

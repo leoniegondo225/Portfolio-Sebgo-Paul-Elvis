@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Reveal from "./Reveal";
 
-const WHATSAPP_NUMBER = "22600000000";
+const WHATSAPP_NUMBER = "22645586855";
 
 const FIELD_CLASS =
   "w-full rounded-xl border border-paper/25 bg-transparent px-4 py-3 text-sm text-paper placeholder:text-paper/40 focus:outline-none focus:border-paper transition-colors";
